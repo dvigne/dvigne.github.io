@@ -1,0 +1,23 @@
+{
+  "name": "dvigne.github.io",
+  "homepage": "dvigne.github.io",
+  "description": "Install All Necessary Packages For dvigne.github.io",
+  "main": "bower.json",
+  "authors": [
+    "Derick Vigne"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-textfill": "^0.6.0",
+    "jquery.scrollTo": "^2.1.2",
+    "scrollreveal": "^3.3.1"
+  }
+}

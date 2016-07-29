@@ -28,17 +28,33 @@ header {
 .header-items {
   position: absolute;
   width:100%;
-  top:45%;
+  top:50%;
+  transform: translateY(-50%);
+  padding: 0 50px;
+  text-align: center;
 }
 
 .header-text {
-  margin: 0px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .header-text h1 {
   margin: 0px !important;
+  font-size: 65px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header-text hr {
+  margin: auto;
+  color: white;
+  width:35px;
+  margin: 30px auto;
+  border-top: 1px solid white;
+  border-width: 3px;
 }
 
 .header-text h2 {
   margin: 0px !important;
+
 }
