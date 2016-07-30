@@ -69,6 +69,7 @@ header {
   height: 50%;
   width: 100%;
   background-color: rgb(41, 41, 40);
+  min-height: 395.5px;
 }
 
 .aboutme {
@@ -181,7 +182,7 @@ header {
     width:100%;
   }
   .break2 {
-    height:65%;
+    height:75%;
   }
   .support-items {
     width:100%;
