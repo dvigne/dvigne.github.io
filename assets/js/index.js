@@ -22,6 +22,12 @@ $(function() {
         scale: 0.3,
         distance: '0px',
       }, 200);
+      sr.reveal('.support-text', {
+        duration: 600,
+        viewFactor: .5,
+        scale: 0.3,
+        distance: '0px',
+      }, 200);
     });
   });
 });
