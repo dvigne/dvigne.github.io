@@ -82,6 +82,13 @@ header {
   transform: translateY(-50%);
   width:65%;
 }
+
+.aboutme-items img {
+  width:150px;
+  padding: 5px;
+  transform: scale(-1, -1) !important;
+}
+
 .aboutme-items h2 {
   margin: 5px;
   font-weight: bold;
@@ -91,4 +98,20 @@ header {
 .aboutme-items p {
   font-weight: 600;
   line-height: 2;
+}
+@media screen and (max-width: 1500px) {
+  .break1 {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    background-color: rgb(41, 41, 40);
+  }
+}
+@media screen and (max-width: 850px) {
+  .break1 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(41, 41, 40);
+  }
 }
