@@ -51,6 +51,10 @@ header {
   margin: auto;
 }
 
+.reveal {
+  display: none;
+}
+
 .header-text h1 {
   margin: 0px !important;
   font-size: 65px;
