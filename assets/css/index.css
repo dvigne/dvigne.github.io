@@ -113,9 +113,10 @@ header {
 
 .break2 {
   position: relative;
-  height: 40%;
+  height: 45%;
   width: 100%;
   background-color: white;
+  min-width: 316px;
 }
 
 .support {
@@ -157,6 +158,9 @@ header {
   width: 100%;
   margin-top: 2.5%;
   font-weight: 600;
+}
+.contact-container i {
+  padding: 10px;
 }
 @media screen and (max-width: 1500px) {
   .break1 {
