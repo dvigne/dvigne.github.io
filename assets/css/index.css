@@ -86,10 +86,7 @@ header {
 .aboutme-items img {
   width:150px;
   padding: 5px;
-  transform: scale(-1, -1) !important;
-  -webkit-transform: scale(-1, -1) !important;
-  -moz-transform: scale(-1, -1) !important;
-  -o-transform: scale(-1, -1) !important;
+
 }
 
 .aboutme-items h2 {
@@ -116,5 +113,19 @@ header {
     height: 100%;
     width: 100%;
     background-color: rgb(41, 41, 40);
+  }
+}
+@media screen and (max-width: 400px) {
+  .break1 {
+    position: relative;
+    height: 150%;
+    width: 100%;
+    background-color: rgb(41, 41, 40);
+  }
+
+  .aboutme-items {
+    margin: auto;
+    transform: translateY(-50%);
+    width:100%;
   }
 }
