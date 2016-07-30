@@ -16,8 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "jquery-textfill": "^0.6.0",
     "jquery.scrollTo": "^2.1.2",
-    "scrollreveal": "^3.3.1"
+    "scrollreveal": "^3.3.1",
+    "FitText.js": "jquery-fittext#^1.2.0"
   }
 }
