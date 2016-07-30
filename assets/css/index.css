@@ -106,6 +106,12 @@ header {
     width: 100%;
     background-color: rgb(41, 41, 40);
   }
+  .aboutme-items img {
+    width:150px;
+    padding: 5px;
+    -webkit-transform: scale(-1, -1) !important;
+    transform: scale(-1, -1) !important;
+  }
 }
 @media screen and (max-width: 850px) {
   .break1 {
