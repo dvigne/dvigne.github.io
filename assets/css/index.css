@@ -11,6 +11,13 @@ body {
 
 a {
   color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  transition: color;
+}
+
+a:hover {
+  color:black;
 }
 
 .wrapper {
@@ -149,6 +156,7 @@ header {
   position: absolute;
   width: 100%;
   margin-top: 2.5%;
+  font-weight: 600;
 }
 @media screen and (max-width: 1500px) {
   .break1 {
