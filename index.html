@@ -24,6 +24,27 @@
   </head>
   <body>
     <div class="wrapper">
+      <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Derick's Computer Support</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-right" id="navbar">
+            <ul class="nav navbar-nav">
+              <li><a class="page-scroll" href="#about">About Me</a></li>
+              <li><a class="page-scroll" href="#contact">Book or Contact Me</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
       <header>
         <div class="header-items">
           <div class="header-text">
@@ -33,7 +54,7 @@
           </div>
         </div>
       </header>
-      <div class="break1">
+      <div id="about" class="break1">
         <div class="aboutme">
           <div class="aboutme-items">
             <h2 class="about-text">Happy To Make Your Aquantence</h1>
@@ -43,7 +64,7 @@
           </div>
         </div>
       </div>
-      <div class="break2">
+      <div id="contact" class="break2">
         <div class="support">
           <div class="support-items">
             <h2 class="support-text">Having Some Computer Troubles?</h1>
@@ -70,6 +91,8 @@
     <script type="text/javascript" src="bower_components\FitText.js\jquery.fittext.js"></script>
     <!-- Invlude Scrollreveal JS -->
     <script type="text/javascript" src="bower_components\scrollreveal\dist\scrollreveal.min.js"></script>
+    <script type="text/javascript" src="assets\js\jquery-easing.js"></script>
+    <script type="text/javascript" src="bower_components\jquery.scrollTo\jquery.scrollTo.min.js"></script>
     <!-- Index Javascript File Include -->
     <script type="text/javascript" src="assets\js\index.js">
 

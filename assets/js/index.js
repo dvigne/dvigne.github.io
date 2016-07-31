@@ -1,5 +1,18 @@
-$(function() {
+(function($) {
+  "use strict";
+  $('a.page-scroll').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+          scrollTop: ($($anchor.attr('href')).offset().top - 50)
+      }, 1250, 'easeInOutExpo');
+      event.preventDefault();
+  });
   $(document).ready(function (e) {
+    $('#navigation').affix({
+      offset: {
+        top: 100
+      }
+    });
     $(window).on('load', function(e) {
       $('.reveal').css('display', 'block');
         window.sr = ScrollReveal();
@@ -30,4 +43,4 @@ $(function() {
         );
     });
   });
-});
+})(jQuery);
