@@ -22,7 +22,7 @@
           viewFactor: 1,
           scale: 0.3,
           distance: '0px'
-        }, 700)
+        }, 700);
         sr.reveal('.about-text', {
           duration: 600,
           viewFactor: .5,
