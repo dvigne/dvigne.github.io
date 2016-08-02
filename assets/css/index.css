@@ -235,3 +235,11 @@ header {
     width:100%;
   }
 }
+@media screen and (max-height: 600px) {
+  .break1 {
+    min-height: 630px;
+  }
+  .break2 {
+    height: 80%;
+  }
+}
