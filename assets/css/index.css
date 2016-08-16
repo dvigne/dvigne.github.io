@@ -10,14 +10,14 @@ body {
 }
 
 a {
-  color: black;
+  color: rgb(199, 194, 194);
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  transition: color;
+  transition: color .2s ease-in-out;
 }
 
 a:hover {
-  color:black;
+  color: rgb(150, 150, 150);
 }
 
 .wrapper {
@@ -151,10 +151,11 @@ header {
   width: 100%;
   background-color: white;
   min-width: 316px;
+  min-height: 500px;
 }
 .certifications {
   position: absolute;
-  top:50%;
+  top:40%;
   height:50%;
   width:100%;
   padding: 0 50px;
@@ -162,11 +163,14 @@ header {
 }
 .certifications_items {
   margin: auto;
+  transform: translateY(-50%);
+  width:100%;
+}
+.certifications_list {
   -moz-column-count: 2;
   -webkit-column-count: 2;
   column-count: 2;
-  transform: translateY(-50%);
-  width:100%;
+  height: 50%;
 }
 .certifications_items ul {
   list-style: none;
@@ -192,6 +196,7 @@ header {
   width:100%;
   padding: 0 50px;
   text-align: center;
+  color: rgb(199, 194, 194);
 }
 
 .support-items {
@@ -262,7 +267,7 @@ header {
   .certifications_container {
     height:150%;
   }
-  .certifications_items {
+  .certifications_list {
     width: 100%;
     -moz-column-count: 1;
     -webkit-column-count: 1;
