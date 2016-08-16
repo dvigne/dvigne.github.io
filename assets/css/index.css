@@ -266,6 +266,7 @@ header {
   }
   .certifications_container {
     height:150%;
+    min-height: 1025px;
   }
   .certifications_list {
     width: 100%;
