@@ -29,6 +29,18 @@
           scale: 0.3,
           distance: '0px',
         }, 200);
+        sr.reveal('.certifications_heading', {
+          duration: 600,
+          viewFactor: .5,
+          scale: 0.3,
+          distance: '0px',
+        }, 200);
+        sr.reveal('.cert_reveal li', {
+          duration: 600,
+          viewFactor: .5,
+          scale: 0.3,
+          distance: '0px',
+        }, 50);
         sr.reveal('.support-text', {
           duration: 600,
           viewFactor: .5,

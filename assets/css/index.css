@@ -10,14 +10,14 @@ body {
 }
 
 a {
-  color: black;
+  color: rgb(199, 194, 194);
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  transition: color;
+  transition: color .2s ease-in-out;
 }
 
 a:hover {
-  color:black;
+  color: rgb(150, 150, 150);
 }
 
 .wrapper {
@@ -145,12 +145,47 @@ header {
   font-weight: 600;
   line-height: 2;
 }
-
+.certifications_container {
+  position: relative;
+  height: 75%;
+  width: 100%;
+  background-color: white;
+  min-width: 316px;
+  min-height: 500px;
+}
+.certifications {
+  position: absolute;
+  top:40%;
+  height:50%;
+  width:100%;
+  padding: 0 50px;
+  text-align: center;
+}
+.certifications_items {
+  margin: auto;
+  transform: translateY(-50%);
+  width:100%;
+}
+.certifications_list {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  height: 50%;
+}
+.certifications_items ul {
+  list-style: none;
+  padding:0px;
+}
+.certifications_items ul li {
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 15px;
+}
 .break2 {
   position: relative;
   height: 45%;
   width: 100%;
-  background-color: white;
+  background-color: rgb(41, 41, 40);
   min-width: 316px;
 }
 
@@ -161,6 +196,7 @@ header {
   width:100%;
   padding: 0 50px;
   text-align: center;
+  color: rgb(199, 194, 194);
 }
 
 .support-items {
@@ -227,6 +263,15 @@ header {
     margin: auto;
     transform: translateY(-50%);
     width:100%;
+  }
+  .certifications_container {
+    height:150%;
+  }
+  .certifications_list {
+    width: 100%;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
   }
   .break2 {
     height:75%;
