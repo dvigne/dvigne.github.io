@@ -1,0 +1,37 @@
+#about {
+  overflow-x: hidden;
+  img {
+    width: 100;
+  }
+}
+
+#stats {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  // background-color: darken(white, 75%);
+  // color: lighten(black, 75%);
+  // color: white;
+  i {
+    font-size: 5rem;
+  }
+}
+
+#quotes {
+  height: 175px;
+  #quotesCarousel {
+    height: 100%;
+  }
+}
+
+#contact {
+  span {
+    animation: blink 1s infinite;
+  }
+}
+
+#certifications {
+  p {
+    font-size: 1rem;
+  }
+}

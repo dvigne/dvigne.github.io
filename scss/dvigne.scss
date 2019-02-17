@@ -1,0 +1,15 @@
+@import 'bootstrap_overrides';
+@import 'variables';
+@import 'masthead';
+@import 'animations';
+@import 'body';
+
+html, body {
+  font-family: "Roboto" !important;
+  height: 100%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
