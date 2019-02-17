@@ -30,6 +30,7 @@ ScrollReveal().reveal('.reveal-scale', {
   scale: .3
 });
 ScrollReveal().reveal('.reveal-scale-interval', {
+  viewFactor: 1,
   distance: '0px',
   scale: .3,
   interval: 150,
