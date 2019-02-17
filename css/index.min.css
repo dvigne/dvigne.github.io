@@ -1,0 +1,97 @@
+.hr-white {
+  border-top: 1px solid white;
+}
+
+.hr-black {
+  border-top: 1px solid black;
+}
+
+.nav-dark {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#masthead {
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/masthead.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+#masthead h1 {
+  font-weight: bold;
+  font-size: 5rem;
+}
+#masthead h2 {
+  font-weight: normal;
+  font-size: 2.5rem;
+}
+#masthead i {
+  color: white;
+  font-size: 4rem;
+  padding-bottom: 1.5rem;
+}
+#masthead i:hover {
+  color: #cccccc;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#about {
+  overflow-x: hidden;
+}
+#about img {
+  width: 100;
+}
+
+#stats {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+#stats i {
+  font-size: 5rem;
+}
+
+#quotes {
+  height: 275px;
+}
+#quotes #quotesCarousel {
+  height: 100%;
+}
+
+#contact span {
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+html, body {
+  font-family: "Roboto" !important;
+  height: 100%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
