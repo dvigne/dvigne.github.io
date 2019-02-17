@@ -11,7 +11,8 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.sass('scss/dvigne.scss', 'css/index.min.css');
+mix.js('js/index.js', 'js/index.min.js')
+   .sass('scss/dvigne.scss', 'css/index.min.css');
 
 // Full API
 // mix.js(src, output);

@@ -21,17 +21,17 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+  <body data-spy="scroll" data-target="#mainNav" data-offset="0">
+    <nav id="mainNav" class="navbar fixed-top navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="#">dvigne.github.io</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home</a>
-          <a class="nav-item nav-link" href="#">About</a>
-          <a class="nav-item nav-link" href="#">Contact</a>
+          <a class="nav-item nav-link active" href="#masthead">Home</a>
+          <a class="nav-item nav-link" href="#about">About</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
         </div>
       </div>
     </nav>
@@ -43,7 +43,7 @@
           <h2>Software Engineer and Cybersecurity Analyst</h2>
         </div>
         <div style="position: absolute;" class="col-6 offset-3 align-self-end">
-          <a href="#"><i class="fas fa-angle-down"></i></a>
+          <a href="#about"><i class="fas fa-angle-down"></i></a>
         </div>
       </div>
     </div>
@@ -122,8 +122,8 @@
               </div>
             </div>
           </div> -->
-          <blockquote class="blockquote">
-            <p class="mb-0">My name is Derick Vigne and I have spent the majority of my life pursuing a career in Computer Science and Engineering. I am currently attending Florida Polytehcnic Univeristy with hopes of continuing on for a Doctoral degree in Computer Engineering.</p>
+          <blockquote class="blockquote reveal-scale">
+            <p class="mb-0">My name is Derick Vigne and I have spent the majority of my life pursuing a career in Computer Science and Engineering. I am currently attending Florida Polytehcnic Univeristy with hopes of continuing on for a Doctoral degree in Computer Engineering. Thank you for visiting the site and I hope to hear from you in the near future regarding projects, work, or inquirys.</p>
             <footer class="blockquote-footer"><cite title="Source Title">Derick Vigne</cite></footer>
           </blockquote>
         </div>
@@ -141,23 +141,92 @@
         </div>
         <div class="col-4 shadow p-5 m-2 reveal-scale-text">
           <i class="fas fa-code-branch"></i>
-          <p>Followers</p>
-          <div id="forks" class="odometer"></div>
+          <p>Repositories</p>
+          <div id="repositories" class="odometer"></div>
         </div>
         <div class="col-4 shadow p-5 m-2 reveal-scale-text">
           <i class="fab fa-github"></i>
-          <p>Following</p>
-          <div id="github" class="odometer"></div>
+          <p>Gists</p>
+          <div id="gists" class="odometer"></div>
         </div>
         <div class="col-4 shadow p-5 m-2 reveal-scale-text">
           <i class="fas fa-users"></i>
-          <p>Repositories</p>
-          <div id="users" class="odometer"></div>
+          <p>Followers</p>
+          <div id="followers" class="odometer"></div>
         </div>
         <div class="col-4 shadow p-5 m-2 reveal-scale-text">
           <i class="fas fa-eye"></i>
-          <p>Gists</p>
-          <div id="watching" class="odometer"></div>
+          <p>Following</p>
+          <div id="following" class="odometer"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pt-5">
+      <div id="certifications" class="row pb-5 justify-content-center text-center text-bold">
+        <div class="col-12 p-4 text-center">
+          <h1>My Certifications</h1>
+          <div class="col-1 m-auto">
+            <hr class="hr-black">
+          </div>
+        </div>
+        <div class="col-10">
+          <div class="row font-weight-bold">
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>Microsoft Technology Associate: Windows Server Administration</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>Microsoft Technology Associate: Networking</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>Microsoft Technology Associate: Operating Systems</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>MCP: Microsoft Certified Professional</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>Adobe Photoshop CS5</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>Adobe Flash CS5</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>Dreamweaver CS6</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>CompTIA Network+</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>CompTIA 701</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>CompTIA Server+ Certified For Server Fundamentals</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>Cisco Certified Entry Network Technician</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>Autodesk 3Ds Max</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>Autodesk Inventor</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>Microsoft Word 2010</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>Microsoft PowerPoint 2010</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>Microsoft Excel 2010</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>Microsoft Outlook 2010</p>
+            </div>
+            <div class="col-2 align-items-center shadow p-5 reveal-scale-interval">
+              <p>Microsoft Office 365</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -176,6 +245,10 @@
             <div class="input-group-append">
               <button class="btn btn-secondary" type="button" id="sendEmail"><i class="far fa-paper-plane"></i> Send email</button>
             </div>
+          </div>
+          <div class="col-12 text-center reveal-bottom">
+            <h1>-or-</h1>
+            <a class="btn btn-lg btn-secondary" href="https://my.setmore.com/bookingpage/82a4bf37-10f6-4107-88ae-9a56715912b5">Book me</a>
           </div>
         </div>
       </div>

@@ -29,15 +29,22 @@ ScrollReveal().reveal('.reveal-scale', {
   distance: '0px',
   scale: .3
 });
+ScrollReveal().reveal('.reveal-scale-interval', {
+  distance: '0px',
+  scale: .3,
+  interval: 150,
+});
 ScrollReveal().reveal('.reveal-scale-text', {
   // distance: '0px',
   // scale: '.3',
   origin: 'bottom',
   interval: 400,
   afterReveal: function() {
-    $("#github").html(500);
-    $("#forks").html(200);
-    $("#users").html(500000);
-    $("#watching").html(350);
+    $.getJSON("https://api.github.com/users/dvigne", function(data) {
+      $("#repositories").html(data['public_repos']);
+      $("#gists").html(data['public_gists']);
+      $("#followers").html(data['followers']);
+      $("#following").html(data['following']);
+    });
   }
 });
