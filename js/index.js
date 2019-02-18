@@ -12,6 +12,7 @@ $(document).ready(function() {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
+        $('#navbarNavAltMarkup').collapse('hide');
         $('html, body').animate({
           scrollTop: (target.offset().top - 72)
         }, 1000, "easeInOutExpo");
