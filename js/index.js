@@ -35,7 +35,6 @@ ScrollReveal().reveal('.reveal-right', {
   origin: 'right',
 });
 ScrollReveal().reveal('.reveal-bottom', {
-  viewFactor: 1,
   origin: 'bottom',
 });
 ScrollReveal().reveal('.reveal-scale', {
