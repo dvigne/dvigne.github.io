@@ -1,0 +1,15 @@
+<div class="card m-auto shadow reveal-scale-card d-none lazyload" style="width: 18rem; height: 385px; max-height:400px;">
+  <a href="{{ include.url }}">
+    <img src="{{ include.img }}" class="card-img-top" alt="{{ include.alt }}">
+  </a>
+  <div class="card-body">
+    <a class="text-decoration-none text-dark" href="{{ include.url}}">
+      <h5 class="card-title">{{ include.title }}</h5>
+    </a>
+    {% if include.subtitle %}
+      <p style="font-size: 15px;" class="card-text mb-2 text-muted fw-lighter fst-italic">{{ include.subtitle }}</p>
+    {% endif %}
+    <p class="card-text">{{ include.description }}</p>
+    <a style="position: absolute; bottom: 1rem;" href="{{ include.url }}" class="card-link text-dark">{{ include.link | default: "Read more" }} &#8594;</a>
+  </div>
+</div>
