@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% capture navlinks %}
+  <a class="nav-item nav-link" href="{{ site.url}}#masthead">Home</a>
+  <a class="nav-item nav-link" href="{{ site.url}}#about">About</a>
+  <a class="nav-item nav-link" href="{{ site.url}}#stats">Track Record</a>
+  <a class="nav-item nav-link" href="{{ site.url}}#contact">Contact</a>
+  <a class="nav-item nav-link" href="{{ '/blog' | absolute_url }}">Blog</a>
+  <a class="nav-item nav-link active" href="{{ '/projects' | absolute_url }}">Projects</a>
+{% endcapture %}
+{% include navbar.html content=navlinks %}
+
+<div style="height: 35%;background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('{{ page.img }}');" class="container-fluid">
+  <div class="row h-100 text-white text-center postmast">
+    <div class="col-xs-12 col-md-6 offset-md-3 text-center align-self-center ">
+      <h1>{{ page.title }}</h1>
+      <hr class="hr-white" />
+      <h2>{{ page.description }}</h2>
+    </div>
+    <!-- <div style="position: absolute;" class="col-6 offset-3 align-self-end">
+      <a href="#about"><i class="fas fa-angle-down"></i></a>
+    </div> -->
+  </div>
+  <div class="row pt-5">
+    <div class="col-12">
+
+    </div>
+    <div class="col-10 m-auto post-body">
+      {{ page.content }}
+    </div>
+  </div>
+</div>

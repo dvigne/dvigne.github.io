@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{% capture navlinks %}
+  <a class="nav-item nav-link" href="{{ site.url}}#masthead">Home</a>
+  <a class="nav-item nav-link" href="{{ site.url}}#about">About</a>
+  <a class="nav-item nav-link" href="{{ site.url}}#stats">Track Record</a>
+  <a class="nav-item nav-link" href="{{ site.url}}#contact">Contact</a>
+  <a class="nav-item nav-link"  href="{{ '/blog' | absolute_url }}">Blog</a>
+  <a class="nav-item nav-link active" href="#projects">Projects</a>
+{% endcapture %}
+{% include navbar.html content=navlinks class="nav-dark"%}
+
+<div id="projects" class="container-fluid pt-5 mt-5 pb-5 mb-5">
+  <div class="row">
+    <div class="col-11 m-auto">
+      <div class="row">
+        {% for project in site.projects %}
+          <div class="col-2 col-xs-1 pt-5">
+            {% include card.html
+              img=project.img
+              alt=project.alt
+              title=project.title
+              description=project.description
+              url=project.url
+            %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

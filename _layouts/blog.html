@@ -1,0 +1,68 @@
+---
+layout: default
+---
+{% capture navlinks %}
+  <a class="nav-item nav-link" href="{{ site.url}}#masthead">Home</a>
+  <a class="nav-item nav-link" href="{{ site.url}}#about">About</a>
+  <a class="nav-item nav-link" href="{{ site.url}}#stats">Track Record</a>
+  <a class="nav-item nav-link" href="{{ site.url}}#contact">Contact</a>
+  <a class="nav-item nav-link active" onclick="window.location.assign('/blog')" href="#blog">Blog</a>
+  <a class="nav-item nav-link" href="{{ '/projects' | absolute_url }}">Projects</a>
+{% endcapture %}
+{% include navbar.html content=navlinks class="nav-dark"%}
+
+<div id="blog" class="container-fluid pt-5 mt-5 pb-5 mb-5">
+  <div class="row">
+    {% if page.hide-filter == nil or page.hide-filter == false %}
+      <div class="col-2">
+        <h3 class="text-center">Categories</h3>
+        <ul class="list-group">
+          {% for category in site.categories %}
+          {% assign category-url = "/category/" | append: category[0] | append: "/" | downcase %}
+          {% if category-url == page.url %}
+          <a class="text-decoration-none" href="{% link blog.html %}">
+            <li class="list-group-item d-flex justify-content-between align-items-center active">
+              {% else %}
+              <a class="text-decoration-none" href="{{ category-url }}">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  {% endif %}
+                  {{ category[0] }}
+                  <span class="badge bg-dark rounded-pill">{{ category[1] | size }}</span>
+                </li>
+              </a>
+              {% endfor %}
+            </ul>
+        </div>
+      <div class="col-10">
+    {% else %}
+    <div class="col-12">
+    {% endif %}
+      <div class="row">
+        {% if page.posts %}
+          {% assign postIttr = page.posts %}
+        {% else %}
+          {% assign postIttr = site.posts %}
+        {% endif %}
+        {% for post in postIttr %}
+          {% if page.hide-filter == nil or page.hide-filter == false %}
+          <div class="col-3 col-xs-1 pt-5">
+          {% else %}
+          <div class="col-2 col-xs-1 pt-5">
+          {% endif %}
+            {% capture date-formatted %}
+              {{ post.date | date: "%Y-%m-%d" }}
+            {% endcapture %}
+            {% include card.html
+              img=post.img
+              alt=post.alt
+              title=post.title
+              subtitle=date-formatted
+              description=post.description
+              url=post.url
+            %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
