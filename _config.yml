@@ -34,6 +34,7 @@ github:  https://dvigne.com/dvigne
 # theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-archives
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -55,3 +56,56 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  achievements:
+  projects:
+   output: true
+
+defaults:
+  -
+    scope:
+      path: "_projects"
+    values:
+      layout: item
+
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      layout: item
+      description:
+      img:
+      category:
+      tags:
+    posts:
+      layout: item
+      description:
+      img:
+      category:
+      tags:
+
+jekyll-archives:
+  enabled: ['categories']
+  layout: blog
+  permalinks:
+    category: '/category/:name/'
+
+certifications:
+  - "Microsoft Technology Associate: Windows Server Administration"
+  - "Microsoft Technology Associate: Networking"
+  - "Microsoft Technology Associate: Operating Systems"
+  - "MCP: Microsoft Certified Professional"
+  - "Adobe Photoshop CS5"
+  - "Adobe Flash CS5"
+  - "Dreamweaver CS6"
+  - "CompTIA Network"
+  - "CompTIA 701"
+  - "CompTIA Server+ Certified For Server Fundamentals"
+  - "Cisco Certified Entry Network Technician"
+  - "Autodesk 3Ds Max"
+  - "Autodesk Inventor"
+  - "Microsoft Word 2010"
+  - "Microsoft PowerPoint 2010"
+  - "Microsoft Excel 2010"
+  - "Microsoft Outlook 2010"
+  - "Microsoft Office 365"
