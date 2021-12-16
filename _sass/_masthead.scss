@@ -22,3 +22,16 @@
     color: darken(white, 20%);
   }
 }
+
+.postmast {
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+}
