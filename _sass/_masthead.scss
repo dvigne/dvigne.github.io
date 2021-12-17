@@ -27,6 +27,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  filter: blur(0.25rem);
   h1 {
     font-weight: bold;
     font-size: 2.5rem;
@@ -35,4 +36,9 @@
     font-weight: normal;
     font-size: 1.5rem;
   }
+}
+
+.postmast + .row {
+  position: relative;
+  top:-100%;
 }
