@@ -83,6 +83,12 @@ jekyll_compose:
       img:
       category:
       tags:
+    projects:
+      layout: item
+      description:
+      img:
+      category:
+      tags:
 
 jekyll-archives:
   enabled: ['categories']
