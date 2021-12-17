@@ -110,15 +110,15 @@ description: >-
   </div>
 </div>
 
-<div class="container-fluid pt-5 h-75">
+<div class="container-fluid pt-5 g-0">
   <div id="projects" class="row pb-5 justify-content-center text-bold">
     <div class="row">
       {% include header.html title="Projects" %}
     </div>
-    <div class="col-9 m-auto pt-5">
-      <div class="row">
+    <div class="col-9 m-auto pt-md-5">
+      <div class="row g-0">
         {% for project in site.projects limit: 4 %}
-        <div class="col-3 col-xs-1">
+        <div class="col-md-6 col-lg-3 col-sm-12 mb-3">
           {% include card.html
             img=project.img
             alt="Server"
@@ -138,14 +138,14 @@ description: >-
   </div>
 </div>
 
-<div class="container-fluid pt-5 mt-5 mb-5 h-75">
-  <div id="blog" class="row pb-5 justify-content-center text-center text-bold">
+<div class="container-fluid mb-5 g-0">
+  <div id="blog" class="row justify-content-center text-center text-bold">
     {% include header.html title="Blog" %}
   </div>
-  <div class="col-9 m-auto pt-1">
+  <div class="col-9 m-auto pt-md-1">
     <div class="row">
       {% for post in site.posts limit: 4 %}
-      <div class="col-3 col-xs-1">
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-sm-3">
         {% capture date %}
           {{ post.date | date: "%Y-%m-%d" }}
         {% endcapture %}

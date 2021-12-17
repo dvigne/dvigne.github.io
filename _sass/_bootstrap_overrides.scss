@@ -21,3 +21,13 @@ a {
 a:hover {
   color: #6c757d;
 }
+
+.item-card {
+  width: 18rem;
+}
+
+@media (max-width: 575.98px) {
+  .item-card {
+    width: auto;
+  }
+}
