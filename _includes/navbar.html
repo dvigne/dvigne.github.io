@@ -1,11 +1,18 @@
-<nav id="mainNav" class="navbar fixed-top navbar-expand-lg navbar-dark {{ include.class }}">
-  <a class="navbar-brand ps-3" href="{{ site.url }}">{{ site.name }}</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigationBar" aria-controls="mainNavigationBar" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse justify-content-end" id="mainNavigationBar">
-    <div class="navbar-nav">
-      {{ include.content }}
+<nav id="mainNav" class="navbar navbar-dark navbar-expand-lg fixed-top fixed-top {{ include.class }}">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ site.url }}">{{ site.name }}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navigationSlider" aria-controls="navigationSlider">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end nav-dark" tabindex="-1" id="navigationSlider">
+      <div class="offcanvas-header flex-row-reverse">
+        <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          {{ include.content }}
+        </ul>
+      </div>
     </div>
   </div>
 </nav>

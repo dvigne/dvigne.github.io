@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  // Close navigation pane when navigation link clicked
+  $('.nav-item').click(function() {
+    bootstrap.Offcanvas.getInstance("#navigationSlider").hide();
+  });
+
   $('.lazyload').removeClass('d-none'); // Once completely loaded, display hidden elements
 
   $(window).on('scroll', function() {

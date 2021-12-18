@@ -1,3 +1,5 @@
+@import 'variables';
+
 .hr-white {
   border-top: 1px solid white;
 }
@@ -5,12 +7,12 @@
   border-top: 1px solid black;
 }
 .nav-dark {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: $overlay;
 }
 
 .list-group-item.active {
-  background-color: rgba(0, 0, 0, 0.75);
-  border-color: rgba(0, 0, 0, 0.75);
+  background-color: $overlay;
+  border-color: $overlay;
 }
 
 a {
