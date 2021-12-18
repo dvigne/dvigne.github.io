@@ -14,7 +14,7 @@ layout: default
 <div id="blog" class="container-fluid pt-5 mt-5 pb-5 mb-5">
   <div class="row">
     {% if page.hide-filter == nil or page.hide-filter == false %}
-      <div class="col-2">
+      <div class="col-lg-2 col-md-2 col-sm-12">
         <h3 class="text-center">Categories</h3>
         <ul class="list-group">
           {% for category in site.categories %}
@@ -33,7 +33,7 @@ layout: default
               {% endfor %}
             </ul>
         </div>
-      <div class="col-10">
+      <div class="col-10 m-auto">
     {% else %}
     <div class="col-12">
     {% endif %}
@@ -45,9 +45,9 @@ layout: default
         {% endif %}
         {% for post in postIttr %}
           {% if page.hide-filter == nil or page.hide-filter == false %}
-          <div class="col-3 col-xs-1 pt-5">
+          <div class="col-md-6 col-lg-3 col-sm-12 mb-3 pt-5">
           {% else %}
-          <div class="col-2 col-xs-1 pt-5">
+          <div class="col-md-6 col-lg-2 col-sm-12 mb-3 pt-5">
           {% endif %}
             {% capture date-formatted %}
               {{ post.date | date: "%Y-%m-%d" }}

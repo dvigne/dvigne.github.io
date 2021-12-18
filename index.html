@@ -145,7 +145,7 @@ description: >-
   <div class="col-9 m-auto pt-md-1">
     <div class="row g-0">
       {% for post in site.posts limit: 4 %}
-      <div class="col-lg-3 col-md-6 col-sm-12 mt-sm-3">
+      <div class="col-md-6 col-lg-3 col-sm-12 mb-3">
         {% capture date %}
           {{ post.date | date: "%Y-%m-%d" }}
         {% endcapture %}
